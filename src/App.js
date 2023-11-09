@@ -1,8 +1,8 @@
 
-import Home from "./Home";
+import Home from "./page/Home";
 import "./App.css";
 import { BrowserRouter, Routes,Route } from 'react-router-dom';
-import Contact from './contact';
+import Contact from "./page/Contact";
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
    <BrowserRouter>
       <Routes>
             <Route path='/' element={<Home />}/>
-            <Route path='/contact' element={<Contact />}/>
+            <Route path='/Contact' element={<Contact />}/>
       </Routes>
    </BrowserRouter>
   );
