@@ -61,7 +61,9 @@ function Articles() {
         isPublished: false,
         },
         ];
+        //ublishedArticles
         const publishedArticles = ArticlesArray.filter((product)=>{return product.isPublished === true;});
+        //astThreePublishedArticls
         const lastThreePublishedArticls = publishedArticles.slice(-3);
         return(
           <main>

@@ -1,17 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from "./Header";
-import Footer from "./Footer";
+
 import Home from "./Home";
+import "./App.css";
+import { BrowserRouter, Routes,Route } from 'react-router-dom';
+import Contact from './contact';
 
 
 function App() {
   return (
-    <>
-    <Header />
-    <Home />
-    <Footer />
-    </>
+   <BrowserRouter>
+      <Routes>
+            <Route path='/' element={<Home />}/>
+            <Route path='/contact' element={<Contact />}/>
+      </Routes>
+   </BrowserRouter>
   );
   }
 
